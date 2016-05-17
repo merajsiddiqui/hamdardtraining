@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{echo $seo->getTitle()}</title>
+    <meta name="description" content="{echo strip_tags($seo->getDescription())}" />
+    <meta name="keywords" content="{echo strip_tags($seo->getKeywords())}">
+    <meta name="author" content="{echo $seo->getAuthor()}" />
+    <meta name="copyright" content="">
+    <meta name="email" content="0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="Rating" content="General">
+    <meta name="Distribution" content="Global">
+    <meta name="Robots" content="{echo $seo->getRobots()}">
+
+<!--paste from here-->
+
+        <!-- CSS FILES -->
+   <script src="{echo CDN}js/jquery.js" type="text/javascript"></script>
+<script src="{echo CDN}js/modernizr-1.6.min.js" type="text/javascript"></script>
+
+<!--Superfish-->
+<link rel="stylesheet" type="text/css" href="{echo CDN}css/superfish.css" media="screen" />+
+<script type="text/javascript" src="{echo CDN}js/hoverIntent.js"></script>
+<script type="text/javascript" src="{echo CDN}js/superfish.js"></script>
+
+<!--custtom script-->
+<script src="{echo CDN}js/custom.js" type="text/javascript"></script>
+
+<!--Color Picker-->
+<script type="text/javascript" src="{echo CDN}js/colorpicker.js"></script>
+<script type="text/javascript" src="{echo CDN}js/eye.js"></script>
+<script type="text/javascript" src="{echo CDN}js/utils.js"></script>
+<script type="text/javascript" src="{echo CDN}js/layout20b9.js?ver=1.0.2"></script>
+<link rel="stylesheet" type="text/css" href="{echo CDN}css/colorpicker.css" media="screen" />
+
+<!--Style and Layout-->
+<link rel="stylesheet" type="text/css" href="{echo CDN}css/reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{echo CDN}css/style.css" media="screen" />
+
+<!--Nivo Slider Slideshow-->
+<link rel="stylesheet" type="text/css" href="{echo CDN}css/nivo-slider.css" media="screen" />
+<script type="text/javascript" src="{echo CDN}js/jquery.nivo.slider.js"></script>
+
+<!--carouFredSel-->
+<script type="text/javascript" src="{echo CDN}js/jquery.carouFredSel-3.2.1.js"></script>
+
+</head>
+    <body id="outer-page">
+   {include /layouts/navigation/header.html}   
+    {ayield action}
+ <footer id="footer" class="clearfix">
+  <div class="shadow">
+    <div class="center">
+      <p>&copy; Copyright 2011. All Rights Reserved. Created by Joefrey a <em>Curator</em> of <a href="http://html5awesome.com/">HTML5 Awesome</a></p>
+    </div>
+  </div>
+</footer> 
+</body>
+
+</html>
+
